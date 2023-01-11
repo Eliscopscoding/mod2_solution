@@ -1,0 +1,57 @@
+/* row is here */
+.row{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+/* columns are here */
+.col{
+    background-color: rgb(218, 218, 218);
+    border: 1px solid black;
+    margin: 5px 10px;
+    display: inline-block;
+    width: 31%;
+}
+.col p{
+    margin: 5px;
+    text-align: justify;
+}
+.item{
+    float: right;
+    width: 100px;
+    padding: 5px 10px;
+    
+    border: 1px solid black;
+    text-align: center;
+}
+.item-box{
+    overflow: hidden;
+}
+
+.item1{background-color: rgb(249, 63, 63);}
+.item2{background-color: rgb(242, 250, 83);}
+.item3{background-color: rgb(135, 223, 252);}
+
+/* media queries are here */
+@media screen and (max-width: 992px) {
+
+    .col-md{
+        width: 47%;
+    }
+    .col-lg{
+        width: 96.5%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .col{
+        width: 90%;
+    }
+    .col-lg{
+        margin-top: 5px;
+    }
+}
